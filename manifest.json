@@ -1,0 +1,51 @@
+{
+	"manifest_version": 3,
+	"name": "HelpMeOut",
+	"version": "1.0.0",
+	"description": "Record your screen with ease",
+	"icons": {
+		"40": "./assets/logo40.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_popup": "./popup.html",
+		"default_icon": {
+			"20": "./assets/logo20.png",
+			"32": "./assets/logo32.png",
+			"40": "./assets/logo40.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"],
+			"css": ["./css/hover.css"],
+			"run_at": "document_start"
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"./assets/logos/logo-2.png",
+				"./assets/logos/logo.png",
+				"./assets/Frame 1000002476.svg",
+				"./assets/stop.svg",
+				"./assets/video-cameracopy.svg",
+				"./assets/microphonecopy.svg",
+				"./assets/trash.svg",
+				"./css./hover.css"
+			],
+			"matches": ["<all_urls>"]
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"storage",
+		"scripting",
+		"tabCapture"
+	],
+	"host_permissions": ["<all_urls>"]
+}
