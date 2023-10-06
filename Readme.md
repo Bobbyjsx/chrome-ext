@@ -11,13 +11,13 @@ npm install
 ```
 
 Open [your chrome extensions](chrome://extensions/) in your browser to load the extension from your local machine.
-if link is broken, just type this in your browser #chrome://extensions/
+just type *chrome://extensions/* in your browser 
 
 In the top left corner of your screen, you will find a 'Load Unpacked' button. Click on it and locate the extension directory on your machine.
 
 ## Note
 
-Please note that the API for this extension is no longer active due to associated costs. However, you are welcome to play around with your own backend. Check out the commented code at [`content.js line 151`](https://github.com/bobbyjsx/chrome-ext/blob/main/content.js) to gain a better understanding of the interaction between the extension and the web page.
+Please note that the API for this extension is no longer active due to associated costs. However, you are welcome to play around with your own backend. Check out the commented code at [`content.js`](https://github.com/Bobbyjsx/chrome-ext/blob/384273467ea975af3e4b0d4379d2b6463fc6de4c/content.js#L151) to gain a better understanding of the interaction between the extension and the web page.
 
 ## Contributions
 
